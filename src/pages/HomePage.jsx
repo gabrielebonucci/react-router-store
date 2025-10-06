@@ -1,16 +1,25 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import "../HomePage.css";
+import { Link } from "react-router-dom";
+
 const HomePage = () => {
   return (
-    <div className="container">
-      <h1>Stop. Sei arrivato.</h1>
-      <p>
+    <div className="homepage-content">
+      <h1 className="homepage-title">Stop. Sei arrivato.</h1>
+      <p className="homepage-subtitle">
         Sì, proprio tu, che scrolli da ore alla ricerca di qualcosa di
-        interessante. Fermati un attimo. Sei stanco dei soliti negozi online,
-        tutti uguali e con cataloghi infiniti? Anche noi. Ecco perché abbiamo
-        creato questo posto: un angolo di web dove ogni singolo prodotto è stato
-        scelto da noi, probabilmente mentre eravamo in pigiama sul divano.
+        interessante.
+        <br />
+        Sei stanco dei soliti negozi online? Anche noi.
       </p>
+      <p className="homepage-text">
+        Qui trovi solo cose che piacciono davvero a noi, quelle che
+        consiglieremmo a un amico.
+      </p>
+      <Link to="/prodotti" className="btn-scopri">
+        Portami alle cose belle!
+      </Link>
     </div>
   );
 };
