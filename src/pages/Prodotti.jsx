@@ -22,6 +22,7 @@ const Prodotti = () => {
             <img src={product.image} alt={product.title} />
             <h2>{product.title}</h2>
             <p>Prezzo: ${product.price}</p>
+            <p></p>
           </div>
         ))}
       </div>

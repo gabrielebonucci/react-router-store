@@ -7,7 +7,7 @@ function DefaultLayout() {
     <>
       <Navbar />
 
-      <main>
+      <main className="container">
         <Outlet />
       </main>
     </>
