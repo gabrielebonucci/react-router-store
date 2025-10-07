@@ -28,7 +28,7 @@ function DettaglioProdotto() {
       <div className="ContainerCardProdDesc">
         <div>
           <img
-            className="Dettagli-mage"
+            className="Dettagli-image"
             src={product.image}
             alt={product.title}
           />
@@ -37,9 +37,7 @@ function DettaglioProdotto() {
           <h2>{product.title}</h2>
           <p className="Descrizione">{product.description}</p>
           <p className="CategoryText">Categoria: {product.category}</p>
-          <p>
-            <strong>Prezzo:</strong> ${product.price}
-          </p>
+          <p className="PriceText">Prezzo: ${product.price}</p>
           <button className="back-btn" onClick={() => navigate(-1)}>
             Torna indietro
           </button>

@@ -9,23 +9,26 @@
 }
 
 .homepage-title {
-  font-size: 123px;
+  background-color: #721ac9;
+  border-radius: 25px;
+  font-size: 120px;
   font-weight: 700;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .homepage-subtitle {
-  font-size: 30px;
+  font-size: 32px;
   color: #040003;
   max-width: 600px;
-  line-height: 1.4;
+  line-height: 1.5;
   margin-bottom: 1rem;
 }
 
 .homepage-text {
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: 700;
   color: rgba(121, 0, 242, 0.9);
   max-width: 600px;
   margin-bottom: 2.5rem;
@@ -38,7 +41,7 @@
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .btn-scopri:hover {
