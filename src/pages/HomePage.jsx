@@ -1,5 +1,3 @@
-import React from "react";
-import Navbar from "../components/Navbar";
 import "../HomePage.css";
 import { Link } from "react-router-dom";
 
