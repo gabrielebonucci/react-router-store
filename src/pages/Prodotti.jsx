@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 const Prodotti = () => {
   const [products, setProducts] = useState([]);
 
@@ -18,15 +19,23 @@ const Prodotti = () => {
       <h1>I Nostri Prodotti</h1>
       <div className="products-list">
         {products.map((product) => (
-          <div key={product.id} className="product-card">
-            <img src={product.image} alt={product.title} />
-            <h2>{product.title}</h2>
-            <p>Prezzo: ${product.price}</p>
-            <p></p>
-          </div>
+          <Link
+            to={`/prodotti/${product.id}`}
+            key={product.id}
+            className="product-card-link"
+          >
+            <div className="product-card">
+              <div className="product-image-container">
+                <img src={product.image} alt={product.title} />
+              </div>
+              <h2>{product.title}</h2>
+              <p>Prezzo: ${product.price}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
   );
 };
+
 export default Prodotti;
